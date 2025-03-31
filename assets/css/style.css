@@ -21,14 +21,12 @@ body {
     position: relative;
 }
 
-/* Animação do gradiente */
 @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* Efeito de partículas (container) */
 #particles-js {
     position: absolute;
     width: 100%;
@@ -36,7 +34,6 @@ body {
     z-index: -1;
 }
 
-/* Botão de modo claro/escuro */
 #toggleMode {
     position: absolute;
     top: 20px;
@@ -57,7 +54,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Relógio */
 .relogio {
     display: flex;
     align-items: center;
@@ -108,7 +104,6 @@ body {
     margin-top: 5px;
 }
 
-/* Data atual */
 .data {
     margin-top: 20px;
     font-size: 18px;
@@ -116,7 +111,6 @@ body {
     opacity: 0.8;
 }
 
-/* Barra de progresso do dia */
 .progresso-dia {
     width: 550px;
     height: 5px;
@@ -134,7 +128,6 @@ body {
     transition: width 0.5s ease;
 }
 
-/* Modo Claro */
 body.light-mode {
     background: linear-gradient(135deg, #e0e7ff, #a5b4fc, #8b5cf6, #7c3aed);
 }
@@ -152,41 +145,39 @@ body.light-mode .progresso-bar {
     background: linear-gradient(to right, #8b5cf6, #7c3aed);
 }
 /* ========== RESPONSIVIDADE ========== */
-/* ========== RELÓGIO SEMPRE HORIZONTAL ========== */
 .relogio {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 200px;
-    width: 100%; /* Ocupa a largura disponível */
-    max-width: 550px; /* Limita a largura máxima */
+    width: 100%; 
+    max-width: 550px; 
     background: transparent;
-    margin: 0 auto; /* Centraliza */
+    margin: 0 auto; 
   }
   
-  /* ========== AJUSTES PARA MOBILE ========== */
   @media (max-width: 768px) {
     .relogio {
-      height: 150px; /* Reduz a altura */
-      padding: 0 15px; /* Espaço nas laterais */
+      height: 150px; 
+      padding: 0 15px; 
     }
   
     .relogio div {
       height: 120px;
-      width: 30%; /* Largura proporcional */
-      min-width: 80px; /* Mínimo para não ficar muito apertado */
+      width: 30%; 
+      min-width: 80px; 
     }
   
     .relogio span {
-      font-size: 32px; /* Números menores */
+      font-size: 32px; 
     }
   
     .relogio span.tempo {
-      font-size: 8px; /* Label menor */
+      font-size: 8px; 
     }
   }
   
-  /* Telas muito pequenas (ex: Galaxy Fold) */
+  
   @media (max-width: 400px) {
     .relogio span {
       font-size: 24px;
